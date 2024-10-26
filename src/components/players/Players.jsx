@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Player from "./Player";
+import SelectedPlayers from "./SelectedPlayers";
 
 const Players = ({ handleBuying, coins }) => {
 	const [isActive, setIsActive] = useState(true);
@@ -15,8 +16,12 @@ const Players = ({ handleBuying, coins }) => {
 	}, []);
 	const handleBtnToggle = ({ target }) => {
 		if (target.className.includes("available")) {
+			document.getElementById("players").classList.remove("hidden");
+			document.getElementById("selected").classList.add("hidden");
 			setIsActive(true);
 		} else {
+			document.getElementById("players").classList.add("hidden");
+			document.getElementById("selected").classList.remove("hidden");
 			setIsActive(false);
 		}
 	};
@@ -38,7 +43,7 @@ const Players = ({ handleBuying, coins }) => {
 						</button>
 					</div>
 				</div>
-				<div className="players mt-20 grid grid-cols-4 gap-4">
+				<div id="players" className="mt-20 grid grid-cols-4 gap-4">
 					{players.map((p) => (
 						<Player
 							key={p.name}
@@ -52,7 +57,11 @@ const Players = ({ handleBuying, coins }) => {
 							handleSelectedPlayers={handleSelectedPlayers}></Player>
 					))}
 				</div>
-				<div className="selected ">{selected.map}</div>
+				<div id="selected" className="hidden">
+					{selected.map((p) => (
+						<SelectedPlayers key={p.name} name={p.name} position={p.position} price={p.price}></SelectedPlayers>
+					))}
+				</div>
 			</div>
 		</div>
 	);
