@@ -26,13 +26,16 @@ const Player = ({
 		} else if (currCoin > 0) {
 			handleBuying(currCoin);
 			setChoosen(true);
-			handleSelectedPlayers({ name, position, price });
+			handleSelectedPlayers({ name, position, price, image });
 			toast.success("Successfully added player", {
 				position: "top-right",
 				theme: "dark",
 			});
 		} else {
-			alert("Not Enough Coins");
+			toast.error("Not enough coins!", {
+				position: "top-right",
+				theme: "dark",
+			});
 			setChoosen(false);
 		}
 	};

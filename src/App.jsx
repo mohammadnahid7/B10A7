@@ -10,7 +10,7 @@ function App() {
 	const [coins, setCoins] = useState(0);
 
 	const handleHeroBtn = () => {
-		setCoins((prev) => prev + 1000000);
+		setCoins((prev) => prev + 100000);
 	};
 	const handleBuying = (currCoins) => {
 		// setCoins((prev) => {

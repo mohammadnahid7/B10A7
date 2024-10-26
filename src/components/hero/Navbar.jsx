@@ -4,7 +4,7 @@ const Navbar = ({ coins }) => {
 			<div className="container mx-auto navbar h-24">
 				<div className="navbar-start">
 					<a className="">
-						<img src="./SquadBuilder.png" alt="" />
+						<img src="../SquadBuilder.png" alt="" />
 					</a>
 				</div>
 				<div className="navbar-center hidden lg:flex">
@@ -24,7 +24,7 @@ const Navbar = ({ coins }) => {
 					</ul>
 				</div>
 				<div className="navbar-end">
-					<span className="text-lg">{coins} Coins</span>
+					<span className="text-lg text-warning font-bold">{coins} Coins</span>
 				</div>
 			</div>
 		</div>

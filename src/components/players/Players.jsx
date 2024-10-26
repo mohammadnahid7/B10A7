@@ -85,6 +85,7 @@ const Players = ({ handleBuying, coins }) => {
 							name={p.name}
 							position={p.position}
 							price={p.price}
+							image={p.image}
 							handleDeletePlayer={handleDeletePlayer}></SelectedPlayers>
 					))}
 					<button className="available btn btn-primary text-base mt-10">Add More Player</button>

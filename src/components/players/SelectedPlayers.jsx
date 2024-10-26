@@ -1,7 +1,7 @@
-const SelectedPlayers = ({ name, position, price, handleDeletePlayer }) => {
+const SelectedPlayers = ({ name, position, price, image, handleDeletePlayer }) => {
 	return (
 		<div className="bg-base-300 rounded-2xl p-5 flex mt-6 items-center">
-			<img src="./src/assets/logo-footer.png" alt="" className="w-16 h-16 bg-base-100 rounded-lg" />
+			<img src={image} alt="" className="w-16 h-16 bg-base-100 rounded-lg" />
 			<div className="ml-6 flex-1">
 				<h3 className="text-xl font-bold text-white">{name}</h3>
 				<p>{position}</p>
