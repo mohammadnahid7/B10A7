@@ -29,9 +29,13 @@ const Players = ({ handleBuying, coins }) => {
 		setSelected([...selected, player]);
 	};
 
+	const handleDeletePlayer = (name) => {
+		const updatedPlayers = selected.filter((player) => player.name !== name);
+		setSelected([...updatedPlayers]);
+	};
 	return (
 		<div className="w-full py-24">
-			<div className="container mx-auto">
+			<div className="container mx-auto mb-96">
 				<div className="flex justify-between">
 					<h2 className="text-3xl font-bold text-white">Available Players</h2>
 					<div className="join" onClick={handleBtnToggle}>
@@ -59,7 +63,12 @@ const Players = ({ handleBuying, coins }) => {
 				</div>
 				<div id="selected" className="hidden">
 					{selected.map((p) => (
-						<SelectedPlayers key={p.name} name={p.name} position={p.position} price={p.price}></SelectedPlayers>
+						<SelectedPlayers
+							key={p.name}
+							name={p.name}
+							position={p.position}
+							price={p.price}
+							handleDeletePlayer={handleDeletePlayer}></SelectedPlayers>
 					))}
 				</div>
 			</div>
