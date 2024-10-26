@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ coins }) => {
 	return (
 		<div className="bg-base-200 fixed left-0 top-0 w-full">
 			<div className="container mx-auto navbar h-24">
@@ -52,7 +52,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 				<div className="navbar-end">
-					<a className="">0 Coins</a>
+					<a className="">{coins} Coins</a>
 				</div>
 			</div>
 		</div>

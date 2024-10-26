@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero = ({ handleHeroBtn }) => {
 	return (
 		<>
 			<div
@@ -11,7 +11,9 @@ const Hero = () => {
 						<img src="./src/assets/banner-main.png" alt="" className="mx-auto mb-7" />
 						<h1 className="mb-7 text-5xl font-bold text-white">Assemble Your Ultimate Dream 11 Cricket Team</h1>
 						<p className="mb-7 text-2xl text-white">Beyond bounderies Beyond Limits</p>
-						<button className="btn btn-primary">Claim Free Coins</button>
+						<button className="btn btn-primary" onClick={handleHeroBtn}>
+							Claim Free Coins
+						</button>
 					</div>
 				</div>
 			</div>
