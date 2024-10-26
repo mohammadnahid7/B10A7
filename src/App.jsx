@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/hero/Navbar";
@@ -8,7 +10,7 @@ function App() {
 	const [coins, setCoins] = useState(0);
 
 	const handleHeroBtn = () => {
-		setCoins((prev) => prev + 10000);
+		setCoins((prev) => prev + 1000000);
 	};
 	const handleBuying = (currCoins) => {
 		// setCoins((prev) => {
@@ -21,6 +23,7 @@ function App() {
 
 	return (
 		<>
+			<ToastContainer />
 			<Navbar coins={coins}></Navbar>
 			<Hero handleHeroBtn={handleHeroBtn}></Hero>
 			<Players handleBuying={handleBuying} coins={coins}></Players>

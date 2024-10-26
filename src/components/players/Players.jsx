@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Player from "./Player";
 import SelectedPlayers from "./SelectedPlayers";
 
@@ -26,18 +28,31 @@ const Players = ({ handleBuying, coins }) => {
 		}
 	};
 	const handleSelectedPlayers = (player) => {
-		setSelected([...selected, player]);
+		if (selected.length >= 6) {
+			toast.error("Maximum Player added", {
+				position: "top-right",
+				theme: "dark",
+			});
+		} else {
+			setSelected([...selected, player]);
+		}
 	};
 
 	const handleDeletePlayer = (name) => {
 		const updatedPlayers = selected.filter((player) => player.name !== name);
 		setSelected([...updatedPlayers]);
+		toast.error("Deleted player", {
+			position: "top-right",
+			theme: "dark",
+		});
 	};
 	return (
 		<div className="w-full py-24">
 			<div className="container mx-auto mb-96">
 				<div className="flex justify-between">
-					<h2 className="text-3xl font-bold text-white">Available Players</h2>
+					<h2 className="text-3xl font-bold text-white">
+						{isActive ? "Available Players" : `Selected Player ${selected.length}/6`}
+					</h2>
 					<div className="join" onClick={handleBtnToggle}>
 						<button className={`available btn ${isActive ? "btn-primary" : "btn-neutral"} join-item text-base`}>
 							Available
@@ -58,10 +73,11 @@ const Players = ({ handleBuying, coins }) => {
 							price={p.price}
 							handleBuying={handleBuying}
 							coins={coins}
-							handleSelectedPlayers={handleSelectedPlayers}></Player>
+							handleSelectedPlayers={handleSelectedPlayers}
+							selected={selected}></Player>
 					))}
 				</div>
-				<div id="selected" className="hidden">
+				<div id="selected" className="hidden" onClick={handleBtnToggle}>
 					{selected.map((p) => (
 						<SelectedPlayers
 							key={p.name}
@@ -70,6 +86,7 @@ const Players = ({ handleBuying, coins }) => {
 							price={p.price}
 							handleDeletePlayer={handleDeletePlayer}></SelectedPlayers>
 					))}
+					<button className="available btn btn-primary text-base mt-10">Add More Player</button>
 				</div>
 			</div>
 		</div>

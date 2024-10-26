@@ -1,14 +1,25 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Player = ({ name, country, position, batting_hand, price, handleBuying, coins, handleSelectedPlayers }) => {
+const Player = ({ name, country, position, batting_hand, price, handleBuying, coins, handleSelectedPlayers, selected }) => {
 	const [choosen, setChoosen] = useState(false);
 
 	const handleBtn = () => {
 		const currCoin = coins - price;
-		if (currCoin > 0) {
+		if (selected.length >= 6) {
+			toast.error("Player Exceeded", {
+				position: "top-right",
+				theme: "dark",
+			});
+		} else if (currCoin > 0) {
 			handleBuying(currCoin);
 			setChoosen(true);
 			handleSelectedPlayers({ name, position, price });
+			toast.success("Successfully added player", {
+				position: "top-right",
+				theme: "dark",
+			});
 		} else {
 			alert("Not Enough Coins");
 			setChoosen(false);
