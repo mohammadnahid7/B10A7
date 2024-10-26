@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Player from "./Player";
 
-const Players = () => {
+const Players = ({ handleBuying, coins }) => {
 	const [isActive, setIsActive] = useState(true);
 	const [players, setPlayers] = useState([]);
+	const [selected, setSelected] = useState([]);
 
 	useEffect(() => {
 		fetch("players.json")
@@ -12,7 +13,6 @@ const Players = () => {
 				setPlayers(data.players);
 			});
 	}, []);
-
 	const handleBtnToggle = ({ target }) => {
 		if (target.className.includes("available")) {
 			setIsActive(true);
@@ -20,7 +20,10 @@ const Players = () => {
 			setIsActive(false);
 		}
 	};
-	console.log(players.length);
+	const handleSelectedPlayers = (player) => {
+		setSelected([...selected, player]);
+	};
+
 	return (
 		<div className="w-full py-24">
 			<div className="container mx-auto">
@@ -31,7 +34,7 @@ const Players = () => {
 							Available
 						</button>
 						<button className={`btn ${!isActive ? "btn-primary" : "btn-neutral"} join-item text-base`}>
-							Selected
+							Selected ({selected.length})
 						</button>
 					</div>
 				</div>
@@ -43,9 +46,13 @@ const Players = () => {
 							country={p.country}
 							position={p.position}
 							batting_hand={p.batting_hand}
-							price={p.price}></Player>
+							price={p.price}
+							handleBuying={handleBuying}
+							coins={coins}
+							handleSelectedPlayers={handleSelectedPlayers}></Player>
 					))}
 				</div>
+				<div className="selected ">{selected.map}</div>
 			</div>
 		</div>
 	);

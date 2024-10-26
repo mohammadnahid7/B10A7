@@ -1,11 +1,20 @@
-// "name": "Rohit Sharma",
-// "country": "India",
-// "position": "Batsman",
-// "batting_hand": "Right-hand",
-// "price": 45000
+import { useState } from "react";
 
-const Player = ({ name, country, position, batting_hand, price }) => {
-	console.log(name, country, position, batting_hand, price);
+const Player = ({ name, country, position, batting_hand, price, handleBuying, coins, handleSelectedPlayers }) => {
+	const [choosen, setChoosen] = useState(false);
+
+	const handleBtn = () => {
+		const currCoin = coins - price;
+		if (currCoin > 0) {
+			handleBuying(currCoin);
+			setChoosen(true);
+			handleSelectedPlayers({ name, position, price });
+		} else {
+			alert("Not Enough Coins");
+			setChoosen(false);
+		}
+	};
+
 	return (
 		<div className="card bg-base-300 shadow-xl">
 			<figure>
@@ -36,7 +45,9 @@ const Player = ({ name, country, position, batting_hand, price }) => {
 					</table>
 				</div>
 				<div className="card-actions justify-end">
-					<button className="btn btn-primary">Choose Player</button>
+					<button data-price={price} className={`btn btn-primary ${choosen && "btn-disabled"}`} onClick={handleBtn}>
+						{choosen ? "Choosen" : "Choose Player"}
+					</button>
 				</div>
 			</div>
 		</div>

@@ -8,14 +8,22 @@ function App() {
 	const [coins, setCoins] = useState(0);
 
 	const handleHeroBtn = () => {
-		setCoins((prev) => prev + 1000000);
+		setCoins((prev) => prev + 10000);
+	};
+	const handleBuying = (currCoins) => {
+		// setCoins((prev) => {
+		// 	const currCoin = prev - price;
+		// 	if (currCoin > 0) return currCoin;
+		// 	else return prev;
+		// });
+		setCoins(currCoins);
 	};
 
 	return (
 		<>
 			<Navbar coins={coins}></Navbar>
 			<Hero handleHeroBtn={handleHeroBtn}></Hero>
-			<Players></Players>
+			<Players handleBuying={handleBuying} coins={coins}></Players>
 		</>
 	);
 }
