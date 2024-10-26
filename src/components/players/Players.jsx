@@ -49,8 +49,8 @@ const Players = ({ handleBuying, coins }) => {
 	return (
 		<div className="w-full py-24">
 			<div className="container mx-auto mb-96">
-				<div className="flex justify-between">
-					<h2 className="text-3xl font-bold text-white">
+				<div className="flex justify-center md:justify-between flex-wrap md:flex-nowrap">
+					<h2 className="text-3xl font-bold text-white my-4 w-full text-center md:text-start">
 						{isActive ? "Available Players" : `Selected Player ${selected.length}/6`}
 					</h2>
 					<div className="join" onClick={handleBtnToggle}>
@@ -62,7 +62,7 @@ const Players = ({ handleBuying, coins }) => {
 						</button>
 					</div>
 				</div>
-				<div id="players" className="mt-20 grid grid-cols-4 gap-4">
+				<div id="players" className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 					{players.map((p) => (
 						<Player
 							key={p.name}
