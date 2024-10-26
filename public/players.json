@@ -1,370 +1,166 @@
 {
 	"players": [
 		{
-			"name": "Rohit Sharma",
-			"country": "India",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 45000
-		},
-		{
-			"name": "Virat Kohli",
-			"country": "India",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 55000
-		},
-		{
-			"name": "Shubman Gill",
-			"country": "India",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 43000
-		},
-		{
-			"name": "Shreyas Iyer",
-			"country": "India",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 47000
-		},
-		{
-			"name": "KL Rahul",
-			"country": "India",
-			"position": "Wicketkeeper",
-			"batting_hand": "Right-hand",
-			"price": 51000
-		},
-		{
-			"name": "Ravindra Jadeja",
-			"country": "India",
-			"position": "All-rounder",
-			"batting_hand": "Left-hand",
-			"price": 48000
-		},
-		{
-			"name": "Hardik Pandya",
-			"country": "India",
-			"position": "All-rounder",
-			"batting_hand": "Right-hand",
-			"price": 60000
-		},
-		{
-			"name": "Jasprit Bumrah",
-			"country": "India",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 57000
-		},
-		{
-			"name": "Kuldeep Yadav",
-			"country": "India",
-			"position": "Bowler",
-			"batting_hand": "Left-hand",
-			"price": 45000
-		},
-		{
-			"name": "Mohammed Siraj",
-			"country": "India",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 50000
-		},
-		{
-			"name": "Shardul Thakur",
-			"country": "India",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 52000
-		},
-		{
-			"name": "David Warner",
-			"country": "Australia",
-			"position": "Batsman",
-			"batting_hand": "Left-hand",
-			"price": 60000
-		},
-		{
-			"name": "Steve Smith",
-			"country": "Australia",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 59000
-		},
-		{
-			"name": "Marnus Labuschagne",
-			"country": "Australia",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 57000
-		},
-		{
-			"name": "Travis Head",
-			"country": "Australia",
-			"position": "Batsman",
-			"batting_hand": "Left-hand",
-			"price": 51000
-		},
-		{
-			"name": "Alex Carey",
-			"country": "Australia",
-			"position": "Wicketkeeper",
-			"batting_hand": "Left-hand",
-			"price": 53000
-		},
-		{
-			"name": "Cameron Green",
-			"country": "Australia",
-			"position": "All-rounder",
-			"batting_hand": "Right-hand",
-			"price": 58000
-		},
-		{
-			"name": "Glenn Maxwell",
-			"country": "Australia",
-			"position": "All-rounder",
-			"batting_hand": "Right-hand",
-			"price": 62000
-		},
-		{
-			"name": "Pat Cummins",
-			"country": "Australia",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 61000
-		},
-		{
-			"name": "Mitchell Starc",
-			"country": "Australia",
-			"position": "Bowler",
-			"batting_hand": "Left-hand",
-			"price": 59000
-		},
-		{
-			"name": "Adam Zampa",
-			"country": "Australia",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 53000
-		},
-		{
-			"name": "Josh Hazlewood",
-			"country": "Australia",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 57000
-		},
-		{
-			"name": "Jason Roy",
-			"country": "England",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 49000
-		},
-		{
-			"name": "Jonny Bairstow",
-			"country": "England",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 56000
-		},
-		{ "name": "Joe Root", "country": "England", "position": "Batsman", "batting_hand": "Right-hand", "price": 59000 },
-		{
-			"name": "Ben Stokes",
-			"country": "England",
-			"position": "All-rounder",
-			"batting_hand": "Left-hand",
-			"price": 62000
-		},
-		{
-			"name": "Jos Buttler",
-			"country": "England",
-			"position": "Wicketkeeper",
-			"batting_hand": "Right-hand",
-			"price": 60000
-		},
-		{
-			"name": "Moeen Ali",
-			"country": "England",
-			"position": "All-rounder",
-			"batting_hand": "Left-hand",
-			"price": 52000
-		},
-		{
-			"name": "Sam Curran",
-			"country": "England",
-			"position": "All-rounder",
-			"batting_hand": "Left-hand",
-			"price": 58000
-		},
-		{
-			"name": "Jofra Archer",
+			"id": 101,
+			"name": "Mark Wood",
 			"country": "England",
 			"position": "Bowler",
 			"batting_hand": "Right-hand",
-			"price": 57000
+			"price": 55000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/383500/383571.jpg"
 		},
 		{
-			"name": "Chris Woakes",
-			"country": "England",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 54000
-		},
-		{
-			"name": "Adil Rashid",
-			"country": "England",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 53000
-		},
-		{ "name": "Mark Wood", "country": "England", "position": "Bowler", "batting_hand": "Right-hand", "price": 55000 },
-		{
-			"name": "Babar Azam",
-			"country": "Pakistan",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 64000
-		},
-		{
-			"name": "Mohammad Rizwan",
-			"country": "Pakistan",
-			"position": "Wicketkeeper",
-			"batting_hand": "Right-hand",
-			"price": 60000
-		},
-		{
-			"name": "Fakhar Zaman",
-			"country": "Pakistan",
-			"position": "Batsman",
-			"batting_hand": "Left-hand",
-			"price": 54000
-		},
-		{
-			"name": "Imam-ul-Haq",
-			"country": "Pakistan",
-			"position": "Batsman",
-			"batting_hand": "Left-hand",
-			"price": 51000
-		},
-		{
-			"name": "Shadab Khan",
-			"country": "Pakistan",
-			"position": "All-rounder",
-			"batting_hand": "Right-hand",
-			"price": 57000
-		},
-		{
-			"name": "Shaheen Afridi",
-			"country": "Pakistan",
-			"position": "Bowler",
-			"batting_hand": "Left-hand",
-			"price": 62000
-		},
-		{
-			"name": "Haris Rauf",
-			"country": "Pakistan",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 54000
-		},
-		{
-			"name": "Hasan Ali",
-			"country": "Pakistan",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 53000
-		},
-		{
-			"name": "Mohammad Nawaz",
-			"country": "Pakistan",
-			"position": "All-rounder",
-			"batting_hand": "Left-hand",
-			"price": 52000
-		},
-		{
-			"name": "Usman Qadir",
-			"country": "Pakistan",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 51000
-		},
-		{
-			"name": "Iftikhar Ahmed",
-			"country": "Pakistan",
-			"position": "All-rounder",
-			"batting_hand": "Right-hand",
-			"price": 54000
-		},
-		{
-			"name": "Quinton de Kock",
-			"country": "South Africa",
-			"position": "Wicketkeeper",
-			"batting_hand": "Left-hand",
-			"price": 60000
-		},
-		{
-			"name": "Temba Bavuma",
-			"country": "South Africa",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 53000
-		},
-		{
-			"name": "Rassie van der Dussen",
-			"country": "South Africa",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 52000
-		},
-		{
-			"name": "Aiden Markram",
-			"country": "South Africa",
-			"position": "All-rounder",
-			"batting_hand": "Right-hand",
-			"price": 55000
-		},
-		{
-			"name": "David Miller",
-			"country": "South Africa",
-			"position": "Batsman",
-			"batting_hand": "Left-hand",
-			"price": 59000
-		},
-		{
-			"name": "Heinrich Klaasen",
-			"country": "South Africa",
-			"position": "Batsman",
-			"batting_hand": "Right-hand",
-			"price": 51000
-		},
-		{
-			"name": "Kagiso Rabada",
-			"country": "South Africa",
-			"position": "Bowler",
-			"batting_hand": "Right-hand",
-			"price": 61000
-		},
-		{
+			"id": 102,
 			"name": "Anrich Nortje",
 			"country": "South Africa",
 			"position": "Bowler",
 			"batting_hand": "Right-hand",
-			"price": 57000
+			"price": 57000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387900/387979.jpg"
 		},
 		{
+			"id": 103,
+			"name": "Travis Head",
+			"country": "Australia",
+			"position": "Batsman",
+			"batting_hand": "Left-hand",
+			"price": 51000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/375500/375508.jpg"
+		},
+		{
+			"id": 104,
+			"name": "Usman Qadir",
+			"country": "Pakistan",
+			"position": "Bowler",
+			"batting_hand": "Right-hand",
+			"price": 51000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/376900/376993.jpg"
+		},
+		{
+			"id": 105,
+			"name": "Babar Azam",
+			"country": "Pakistan",
+			"position": "Batsman",
+			"batting_hand": "Right-hand",
+			"price": 64000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/373900/373917.jpg"
+		},
+		{
+			"id": 106,
 			"name": "Keshav Maharaj",
 			"country": "South Africa",
 			"position": "Bowler",
 			"batting_hand": "Left-hand",
-			"price": 53000
+			"price": 53000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/378700/378774.jpg"
 		},
 		{
+			"id": 107,
+			"name": "Quinton de Kock",
+			"country": "South Africa",
+			"position": "Wicketkeeper",
+			"batting_hand": "Left-hand",
+			"price": 60000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/383100/383166.jpg"
+		},
+		{
+			"id": 108,
+			"name": "Chris Woakes",
+			"country": "England",
+			"position": "Bowler",
+			"batting_hand": "Right-hand",
+			"price": 54000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387900/387979.jpg"
+		},
+		{
+			"id": 109,
+			"name": "Iftikhar Ahmed",
+			"country": "Pakistan",
+			"position": "All-rounder",
+			"batting_hand": "Right-hand",
+			"price": 54000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/376900/376993.jpg"
+		},
+		{
+			"id": 110,
+			"name": "Marnus Labuschagne",
+			"country": "Australia",
+			"position": "Batsman",
+			"batting_hand": "Right-hand",
+			"price": 57000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/373900/373917.jpg"
+		},
+		{
+			"id": 111,
+			"name": "Adam Zampa",
+			"country": "Australia",
+			"position": "Bowler",
+			"batting_hand": "Right-hand",
+			"price": 53000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/378700/378774.jpg"
+		},
+		{
+			"id": 112,
+			"name": "Adil Rashid",
+			"country": "England",
+			"position": "Bowler",
+			"batting_hand": "Right-hand",
+			"price": 53000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/383100/383166.jpg"
+		},
+		{
+			"id": 113,
+			"name": "Jofra Archer",
+			"country": "England",
+			"position": "Bowler",
+			"batting_hand": "Right-hand",
+			"price": 57000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/383500/383571.jpg"
+		},
+		{
+			"id": 114,
+			"name": "Josh Hazlewood",
+			"country": "Australia",
+			"position": "Bowler",
+			"batting_hand": "Right-hand",
+			"price": 57000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/375500/375508.jpg"
+		},
+		{
+			"id": 115,
+			"name": "Mitchell Starc",
+			"country": "Australia",
+			"position": "Bowler",
+			"batting_hand": "Left-hand",
+			"price": 59000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/387900/387979.jpg"
+		},
+		{
+			"id": 116,
 			"name": "Lungi Ngidi",
 			"country": "South Africa",
 			"position": "Bowler",
 			"batting_hand": "Right-hand",
-			"price": 54000
+			"price": 54000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/373900/373917.jpg"
+		},
+		{
+			"id": 117,
+			"name": "Mohammad Nawaz",
+			"country": "Pakistan",
+			"position": "All-rounder",
+			"batting_hand": "Left-hand",
+			"price": 52000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/378700/378774.jpg"
+		},
+		{
+			"id": 118,
+			"name": "Mohammad Rizwan",
+			"country": "Pakistan",
+			"position": "Wicketkeeper",
+			"batting_hand": "Right-hand",
+			"price": 60000,
+			"image": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/383500/383571.jpg"
 		}
 	]
 }

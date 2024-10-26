@@ -65,12 +65,13 @@ const Players = ({ handleBuying, coins }) => {
 				<div id="players" className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 					{players.map((p) => (
 						<Player
-							key={p.name}
+							key={p.id}
 							name={p.name}
 							country={p.country}
 							position={p.position}
 							batting_hand={p.batting_hand}
 							price={p.price}
+							image={p.image}
 							handleBuying={handleBuying}
 							coins={coins}
 							handleSelectedPlayers={handleSelectedPlayers}

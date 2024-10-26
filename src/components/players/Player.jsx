@@ -2,7 +2,18 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Player = ({ name, country, position, batting_hand, price, handleBuying, coins, handleSelectedPlayers, selected }) => {
+const Player = ({
+	name,
+	country,
+	position,
+	batting_hand,
+	price,
+	image,
+	handleBuying,
+	coins,
+	handleSelectedPlayers,
+	selected,
+}) => {
 	const [choosen, setChoosen] = useState(false);
 
 	const handleBtn = () => {
@@ -29,7 +40,7 @@ const Player = ({ name, country, position, batting_hand, price, handleBuying, co
 	return (
 		<div className="card bg-base-300 shadow-xl">
 			<figure>
-				<img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+				<img src={image} alt="Shoes" />
 			</figure>
 			<div className="card-body">
 				<h2 className="card-title text-white">{name}</h2>
