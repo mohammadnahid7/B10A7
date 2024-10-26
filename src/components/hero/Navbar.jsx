@@ -1,6 +1,6 @@
 const Navbar = ({ coins }) => {
 	return (
-		<div className="bg-base-200 fixed left-0 top-0 w-full">
+		<div className="bg-base-200 fixed left-0 top-0 w-full z-[100]">
 			<div className="container mx-auto navbar h-24">
 				<div className="navbar-start">
 					<div className="dropdown">
